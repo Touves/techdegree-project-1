@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;    
+    }
+    
+    
+    html, body {
+    height: 100%;
+    margin: 0;
+    
+    
+    }
+    h2 {
+    padding-top: 10px; 
+    font-family: 'Roboto';    
+    }
+
+    p {
+      padding-top: 10px;
+       font-family: 'Roboto'; 
+
+    }
+    .paragraph {
+
+    }
+    .copyright {
+      color: grey;
+    }
+
+    body {
+        font-family: 'Roboto';
+        
+          text-align: center;
+          display: grid; 
+          grid-template-rows: 1fr auto;
+          min-height: 100vh;
+          overflow-x: hidden;
+        
+    }
+    .sticky-header-lesson {
+        margin-top: 200px;
+    }
+    
+    .sticky-header {
+     position: fixed;
+     top: 0;
+     height: 100px; 
+     background: black;   
+     width: 100%;
+     left: 0;
+     z-index: 99;
+    }
+    
+    .main-nav {
+        width: 100vw;
+        background: black;
+        min-height: 30px;
+        padding: 10px;
+       
+      }
+      .nav {
+        display: flex;
+        font-weight: 700;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+      }
+      
+  
+      .nav li {
+        padding-top: 36px;
+        
+      }
+
+      .nav a {
+        transition: all .5s;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+      }
+      
+      
+      a {
+        text-decoration: none;
+        color: #999;
+        color: black;
+      }
+      a:hover {
+        color: grey;
+      }
+     
+    .a-home {
+    padding-right: ;
+    padding-left: 1200px;
+
+    } 
+    
+    .a-interests {
+    
+    padding-right: 5px;
+    padding-left: 50px;
+    
+
+    } 
+    
+    .page-content {
+    
+        min-height: 100%;
+        margin-bottom: -200px;   
+    }
+    
+    .container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     width: 100%;   
+    }
+
+    .photography-link {
+      padding-top: ;
+      padding-bottom: ;
+      }
+  
+      .photography-link:hover {
+        color: grey;
+        padding top: 100px;
+        padding-bottom: ;
+        }
+
+    .travel-photography-link {
+    padding-top: ;
+    padding-bottom: ;
+    }
+
+    .travel-photography-link:hover {
+      color: grey;
+      padding top: 100px;
+      padding-bottom: ;
+      }
+
+    .photography-link {
+    color: black;
+    padding-top: 100px ;
+    padding-bottom: ;
+    }
+
+    .photography-link:hover {
+      color: grey;
+      padding top: 100px;
+      padding-bottom: ;
+      }
+
+    #plane {
+    color: orange;  
+    }
+    
+    #plane:hover {
+    transform: scale(1.2) rotate(5deg);
+    }
+
+      #book {
+      color: blue;
+      padding-top: 30px;
+       }
+
+      #book:hover {
+      transform: scale(1.2) rotate(5deg);
+       }
+    
+      #camera {
+      color: yellowgreen;
+      padding-top: 15px;
+       }
+      #camera:hover {
+      transform: scale(1.2) rotate(5deg);
+      }     
+           
+    .social-navlinks {
+       color: white; 
+       align-items: center;
+       justify-content: center;
+      
+    }
+    .social-medias {
+        align-items: center;
+        justify-content: center;
+    
+    }
+    a {
+        text-decoration: none;
+        padding: 10px;
+    }
+    
+    .nav a {
+      transition: all .5s;
+    }
+
+    .nav a:hover {
+      color: grey
+    }
+
+    .paragraph {
+    padding-bottom: 10px;    
+    }
+   
+    
+    .icons {
+    padding-top: 10px;    
+    }
+    
+    footer {
+     background: black;
+     width: 100vw;
+     align-items: center;
+     justify-content: center;
+     padding-top: 30px;
+     padding-bottom: 9px;
+        
+    }
+   
+    
