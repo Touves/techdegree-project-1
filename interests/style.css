@@ -34,6 +34,7 @@
           overflow-x: hidden;
         
     }
+    # code adapted from https://www.youtube.com/@freeccodecamp
     .sticky-header-lesson {
         margin-top: 200px;
     }
