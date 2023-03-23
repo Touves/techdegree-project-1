@@ -1,4 +1,4 @@
-/* Global Layout Set-up */
+
 * { 
   box-sizing: border-box;
 }
@@ -23,14 +23,24 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
-  width: 100%;
-  background: black;
-  min-height: 30px;
-  padding: 10px;
-  position: fixed;
-  text-align: center;
+
+.site-identity img {
+  max-width: 100px;
+  float: left;
+  margin: 0 10px 0 0;
 }
+
+.site-navigation {
+  float: right;
+}
+
+.site-navigation ul, li {
+  margin: 0; 
+  padding: 0;
+}
+
+
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -39,22 +49,40 @@ a:hover {
   margin: 0 auto;
   padding: 0;
 }
-.a-home {
-  padding-right: ;
-  padding-left: 1200px;
 
-  } 
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: .5em 1em;
+  position: fixed;
+  text-align: center;
+}
+
+.main-nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-identity {
+  float: left;
+}
+
+
+.a-home {
+ padding-left: 1200px;
+} 
   
   .a-interests {
   
   padding-right: 5px;
   padding-left: 50px;
-  
-
   } 
 
 .nav li {
 padding-top: 36px;
+padding-bottom: 36px;
 }
 
 .nav a {
