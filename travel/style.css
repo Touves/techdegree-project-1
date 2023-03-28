@@ -6,7 +6,23 @@
 html, body {
 
   height: 100%;
-  margin: 0;
+margin: 0;
+}
+ /*# code adapted from https://codepen.io/johndoenma/pen/VXpaVM*/
+
+ .site-identity img {
+  max-width: 110px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.site-navigation {
+  float: right;
+}
+
+.site-navigation ul, li {
+  margin: 0; 
+  padding: 0;
 }
 
 /*# code adapted from https://www.youtube.com/@freecodecamp*/
@@ -26,9 +42,8 @@ left: 0;
 z-index: 99;
 }
 
-.touve-logo {
+.t-logo {
 margin-left: 0;
-
 }
 
 
@@ -39,11 +54,8 @@ margin-left: 0;
   min-height: 100%;
   margin-bottom: -30px;
   margin: 0 auto;
-  
   padding: 50px 20px;
-  
-
-}
+  }
 
 .gallery {
 

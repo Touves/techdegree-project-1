@@ -13,17 +13,9 @@ body {
 }
 /* Link Styles */
 
-a {
-  text-decoration: none;
-  color: white;
-}
-a:hover {
-  color: #6633ff;
-}
-
 /* Section Styles */
 
-
+/*# code adapted from https://codepen.io/johndoenma/pen/VXpaVM*/
 .site-identity img {
   max-width: 100px;
   float: left;
@@ -39,7 +31,9 @@ a:hover {
   padding: 0;
 }
 
-
+.site-identity {
+  float: left;
+}
 
 .nav {
   display: flex;
@@ -65,24 +59,11 @@ a:hover {
   clear: both;
 }
 
-.site-identity {
-  float: left;
-}
-
-
-.a-home {
- padding-left: 1200px;
-} 
-  
-  .a-interests {
-  
-  padding-right: 5px;
-  padding-left: 50px;
-  } 
-
 .nav li {
 padding-top: 36px;
 padding-bottom: 36px;
+font-family: 'Poppins', sans-serif;
+color: white;
 }
 
 .nav a {
@@ -90,6 +71,24 @@ padding-bottom: 36px;
 }
 .nav a:hover {
   color: grey
+}
+
+.a-home {
+  padding-left: 1200px;
+ } 
+   
+   .a-interests {
+   
+   padding-right: 5px;
+   padding-left: 50px;
+   } 
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: grey;
 }
 
 /* # code adapted from https://www.youtube.com/@KevinPowell */
@@ -127,6 +126,7 @@ header .profile-image:hover {
 
 float: left;
 }
+
 .location {
   background-color: #222;
   color: yellow;

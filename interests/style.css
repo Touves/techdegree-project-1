@@ -6,9 +6,9 @@
     html, body {
     height: 100%;
     margin: 0;
-    
-    
     }
+
+
     h2 {
     padding-top: 10px; 
     font-family: 'Roboto';    
@@ -16,7 +16,7 @@
 
     p {
       padding-top: 10px;
-       font-family: 'Roboto'; 
+      font-family: 'Roboto', sans-serif;
 
     }
     
@@ -26,17 +26,17 @@
 
     body {
         font-family: 'Roboto';
-        
-          text-align: center;
-          display: grid; 
-          grid-template-rows: 1fr auto;
-          min-height: 100vh;
-          overflow-x: hidden;
+        text-align: center;
+        display: grid; 
+        grid-template-rows: 1fr auto;
+        min-height: 100vh;
+        overflow-x: hidden;
         
     }
    /*# code adapted from https://www.youtube.com/@freeccodecamp*/
-    .sticky-header-lesson {
-        margin-top: 200px;
+    
+   .sticky-header-lesson {
+   margin-top: 200px;
     }
     
     .sticky-header {
@@ -48,27 +48,39 @@
      left: 0;
      z-index: 99;
     }
+
+    
     
     .main-nav {
-        width: 100vw;
-        background: black;
-        min-height: 30px;
-        padding: 10px;
-       
+      width: 100%;
+      background: black;
+      min-height: 30px;
+      padding: .5em 1em;
+      position: fixed;
+      text-align: center;
       }
+
+      .main-nav::after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+
       .nav {
-        display: flex;
-        font-weight: 700;
-        list-style-type: none;
-        margin: 0 auto;
-        padding: 0;
+      display: flex;
+      font-weight: 700;
+      list-style-type: none;
+      margin: 0 auto;
+      padding: 0;
       }
-      
-  
-      .nav li {
-        padding-top: 36px;
         
-      }
+
+    .nav li {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    }
 
       .nav a {
         transition: all .5s;
@@ -79,32 +91,53 @@
       
       a {
         text-decoration: none;
-        color: #999;
-        color: black;
-      }
+        color: white;
+        }
+
       a:hover {
-        color: grey;
+      color: grey;
       }
      
     .a-home {
-    padding-right: ;
+    padding-right: 5px;
     padding-left: 1200px;
-
     } 
     
     .a-interests {
     
     padding-right: 5px;
     padding-left: 50px;
-    
-
     } 
-    
-    .page-content {
-    
-        min-height: 100%;
-        margin-bottom: -200px;   
-    }
+
+/*# code adapted from https://codepen.io/johndoenma/pen/VXpaVM*/
+
+.site-identity img {
+  max-width: 100px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.site-navigation {
+  float: right;
+}
+
+.site-navigation ul, li {
+  margin: 0; 
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-content {
+  min-height: 100%;
+  margin-bottom: -200px;       
+  }
     
     .container {
      display: flex;
@@ -114,26 +147,19 @@
      width: 100%;   
     }
 
-    .photography-link {
-      padding-top: ;
-      padding-bottom: ;
-      }
   
-      .photography-link:hover {
-        color: grey;
-        padding top: 100px;
-        padding-bottom: ;
-        }
 
     .travel-photography-link {
+    color: black;
     padding-top: ;
-    padding-bottom: ;
+    padding-bottom: 20px;
+    padding-left: 10px;
     }
 
     .travel-photography-link:hover {
       color: grey;
-      padding top: 100px;
-      padding-bottom: ;
+      padding-top: 100px;
+      
       }
 
     .photography-link {
@@ -144,8 +170,9 @@
 
     .photography-link:hover {
       color: grey;
-      padding top: 100px;
-      padding-bottom: ;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
       }
 
     #plane {
@@ -184,11 +211,7 @@
         justify-content: center;
     
     }
-    a {
-        text-decoration: none;
-        padding: 10px;
-    }
-    
+   
     .nav a {
       transition: all .5s;
     }
