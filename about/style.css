@@ -17,9 +17,9 @@ body {
 
 /*# code adapted from https://codepen.io/johndoenma/pen/VXpaVM*/
 .site-identity img {
-  max-width: 100px;
-  float: left;
-  margin: 0 10px 0 0;
+    max-width: 100px;
+    float: left;
+    margin: 0 10px 0 0;
 }
 
 .site-navigation {
@@ -36,12 +36,12 @@ body {
 }
 
 .nav {
-  display: flex;
-  justify-content: space-around;
-  font-weight: 700;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0; 
 }
 
 .main-nav {
@@ -60,10 +60,10 @@ body {
 }
 
 .nav li {
-padding-top: 36px;
-padding-bottom: 36px;
-font-family: 'Poppins', sans-serif;
-color: white;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
 }
 
 .nav a {
@@ -78,9 +78,8 @@ color: white;
  } 
    
    .a-interests {
-   
-   padding-right: 5px;
-   padding-left: 50px;
+    padding-right: 5px;
+    padding-left: 50px;
    } 
 
 a {
@@ -124,7 +123,7 @@ header .profile-image:hover {
 
 .t-logo {
 
-float: left;
+  float: left;
 }
 
 .location {

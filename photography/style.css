@@ -4,16 +4,15 @@
 }
 
 html, body {
-
-height: 100%;
-margin: 0;
+  height: 100%;
+  margin: 0;
 }
  /*# code adapted from https://codepen.io/johndoenma/pen/VXpaVM*/
 
  .site-identity img {
-  max-width: 110px;
-  float: left;
-  margin: 0 10px 0 0;
+    max-width: 110px;
+    float: left;
+    margin: 0 10px 0 0;
 }
 
 .site-navigation {
@@ -33,25 +32,24 @@ margin: 0;
 }
 
 .sticky-header {
-display: flex;
-position: fixed;
-top: 0;
-height: 120px; 
-background: black;   
-width: 100%;
-left: 0;
-z-index: 99;
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 120px; 
+  background: black;   
+  width: 100%;
+  left: 0;
+  z-index: 99;
 }
 
 .t-logo {
-margin-left: 0;
+  margin-left: 0;
 }
 
 
 /*# code adapted from https://youtube.com/webcifar/*/ 
 
 .container {
-
   min-height: 100%;
   margin-bottom: -30px;
   margin: 0 auto;
@@ -59,22 +57,20 @@ margin-left: 0;
   }
 
 .gallery {
-
-padding-top: 20px; 
-width: 100%;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-margin-top: 50px;
-grid-gap: 10px;
+  padding-top: 20px; 
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 50px;
+  grid-gap: 10px;
 }
 
 .photo {
-
-width: 100%;
-height: 300px;
-position: relative;
-overflow: hidden;
-border-radius: 12px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
 } 
 
 /*# code adapted from https://www.youtube.com/@freecodecamp*/
@@ -89,7 +85,6 @@ footer, .container::after {
 } 
   
 body {
-  
   margin: 0;
   padding: 0;
   text-align: center;
@@ -110,15 +105,14 @@ a:hover {
 }
 
 .a-home {
-  padding-right: ;
   padding-left: 1200px;
 
   } 
   
   .a-interests {
   
-  padding-right: 5px;
-  padding-left: 50px;
+    padding-right: 5px;
+    padding-left: 50px;
   
 
   } 
@@ -126,19 +120,19 @@ a:hover {
 /* Section Styles */
 
 .main-nav {
-  width: 100vw;
-  background: black;
-  min-height: 30px;
-  padding: 10px;
- text-align: center;
+    width: 100vw;
+    background: black;
+    min-height: 30px;
+    padding: 10px;
+  text-align: center;
 }
 .nav {
-  display: flex;
-  justify-content: space-around;
-  font-weight: 700;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
 
@@ -156,29 +150,31 @@ a:hover {
 
 img {
 
-width: 100%;
-height: 100%;
-object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 section {
-min-height: 100vh;
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 100px 0;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
 }
 
 .copyright {
-color: gray;
+  color: gray;
 }
+
+
 
 footer {
   
-  width: 100%;
-  min-height: 30px;
-  padding: 20px 0 40px 20px;
+    width: 100%;
+    min-height: 30px;
+    padding: 20px 0 40px 20px;
 }
 
 
@@ -227,7 +223,7 @@ footer {
     font-size: 1.3em;
     width: 100vw;
     margin: 40px auto;
-color: white;
+    color: white;
   }
 
 }
