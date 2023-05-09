@@ -1,147 +1,85 @@
 
-
-/* Global Layout Set-up */
 * { 
   box-sizing: border-box;
 }
-
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  font-family: 'Roboto';
-  text-align: center;
-  display: grid; 
-  grid-template-rows: 1fr auto;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
+  
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background-color: white;
-  overflow-x: hidden;
-  
+  background: #f7f5f0;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #6633ff;
 }
 
-/*# code adapted from https://youtube.com/webcifar/*/ 
-  
-.container {
-  min-height: 100%;
-  margin-bottom: -30px;
-  margin: 0 auto;
-  padding: 50px 20px;
-  }
-
-/*# code adapted from https://codepen.io/johndoenma/pen/VXpaVM*/
-
-  .page-content {
-    min-height: 100%;
-    margin-bottom: -200px;       
-  }
-      
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;   
-  }
-  
-  .container::after {
-    content: "";
-    display: block;
-    margin-bottom: -30px;
-  }
-
-section {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 100px 0;
-  flex-direction: column;
-}
-
-
-.site-navigation {
-  float: right;
-}
-
-.site-navigation ul, li {
-  margin: 0; 
-  padding: 0;
-}
-
- /*# code adapted from https://codepen.io/johndoenma/pen/VXpaVM*/
-  
- .site-identity img {
-  max-width: 110px;
-  float: left;
-  margin: 0 10px 0 0;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-around;
-    font-weight: 700;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0; 
-}
+/* Section Styles */
 
 .main-nav {
   width: 100%;
   background: black;
   min-height: 30px;
-  padding: .5em 1em;
+  padding: 10px;
   position: fixed;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  padding: 0;
 }
 
-.main-nav::after {
-  content: "";
-  display: table;
-  clear: both;
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
 }
-
 .nav li {
-  padding-top: 36px;
-  padding-bottom: 36px;
-  font-family: 'Poppins', sans-serif;
-  color: white;
+  padding: 5px 10px 10px 10px;
 }
-
 .nav a {
   transition: all .5s;
-  font-family: 'Poppins', sans-serif;
-  color: white;
 }
-
 .nav a:hover {
-  color: grey
+  color: white
 }
-/* Headers*/
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/toronto.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 110px;
   line-height: 1.5;
 }
 
+.sticky-header-lesson {
+  margin-top: 200px;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 99;
+}
 
 header .profile-image {
-  margin-top: 95px;
+  margin-top: 50px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -152,78 +90,6 @@ header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 
-/*# code adapted from https://www.youtube.com/@freeccodecamp*/
- 
-
-.sticky-header-lesson {
-  margin-top: 200px;
-}
-
-.sticky-header {
-  position: fixed;
-  top: 0;
-  height: 10px; 
-  background: black;   
-  width: 100%;
-  left: 0;
-  z-index: 99;
-}
-
-/* Link Styles */
-
-.a-interests {
-padding-right: 5px;
-
- 
-} 
-
-.a-home {
-  padding-right: 5px;
-  padding-left: 1200px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  color: grey;
-}
-
-.travel-photography-link {
-  color: black;
-  padding-bottom: 20px;
-  padding-left: 10px;
-}
-
-.travel-photography-link:hover {
-  color: grey;
-  padding-top: 100px;
-}
-
-.photography-link {
-  color: black;
-  padding-top: 100px;
-}
-
-.photography-link:hover {
-  color: grey;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-/*Main Content*/
-
-/*# code adapted from https://codepen.io/johndoenma/pen/VXpaVM*/
-
-.page-content {
-  min-height: 100%;
-  margin-bottom: -200px;       
-}  
-
 .tag {
   background-color: #efefef;
   color: black;
@@ -232,12 +98,10 @@ a:hover {
   display: table;
   margin: 10px auto;
 } 
-
 .location {
   background-color: #222;
   color: yellow;
 }
-
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -270,103 +134,21 @@ ul.skills {
   background: #0399ff;
 }
 
-h2 {
-  padding-top: 10px; 
-  font-family: 'Roboto';    
-}
-
-p {
-  padding-top: 10px;
-  font-family: 'Roboto', sans-serif;
-}
-
-.paragraph {
-  padding-bottom: 10px;    
-}
-
-.icons {
-  padding-top: 10px;    
-}
-
-#plane {
-  color: orange;  
-}
-    
-#plane:hover {
-  transform: scale(1.2) rotate(5deg);
-}
-
-#book {
-  color: blue;
-  padding-top: 30px;
-}
-
-#book:hover {
-  transform: scale(1.2) rotate(5deg);
-}
-    
-#camera {
-  color: yellowgreen;
-  padding-top: 15px;
-}
-      
-#camera:hover {
-  transform: scale(1.2) rotate(5deg);
-}  
-
-/*# code adapted from https://youtube.com/webcifar/*/ 
-  
-.gallery {
-  padding-top: 20px; 
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-top: 50px;
-  grid-gap: 10px;
-}
-
-.photo {
-  width: 100%;
-  height: 300px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/*Footers*/
-
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding: 20px 0 5px 20px;
 }
 
-footer {
+#black-footer {
   background-color: black;
-  font-size: 1.3em;
-  width: 100vw;
-  margin: 40px auto 0 auto; 
   color: white;
+  margin: 0;
 }
 
-footer p {
-  margin-bottom: 0;
-}
-
-/*# code adapted from https://www.youtube.com/@freecodecamp*/
-footer, .container::after {
-  height: 120px;    
-} 
-
-.footer-nav {
-  display: inline-block;
-  justify-content: center;
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
 }
 
 footer ul {
@@ -401,24 +183,65 @@ a.github {
 a.social:hover {
   opacity: 1;
 }
-
-.social-navlinks {
-  color: white; 
-  align-items: center;
-  justify-content: center;
-}
-.social-medias {
-  align-items: center;
-  justify-content: center;
-}
-
 .clearfix {
   clear: both;
 }
-.copyright {
-  color: grey;
-  justify-content: center;
-  align-items: center;
+
+.icons {
+  padding-top: 10px;    
+}
+.content {
+margin-top: 15px;
+margin-bottom: 15px;
+}
+#plane {
+  color: orange;  
+}
+    
+#plane:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+#book {
+  color: blue;
+  padding-top: 30px;
+}
+
+#book:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+    
+#camera {
+  color: yellowgreen;
+  padding-top: 15px;
+}
+      
+#camera:hover {
+  transform: scale(1.2) rotate(5deg);
+}  
+.gallery {
+  padding-top: 20px; 
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 50px;
+  grid-gap: 25px 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.photo {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Styles for larger screens */
@@ -433,11 +256,33 @@ a.social:hover {
       margin: 0 auto;
   }
 
-  main {
-    padding-top: 20px;
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  .flex {
+    padding-top: 140px;
   }
 
   main p {
     line-height: 1.6em;
   }
-  
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+  #black-footer {
+  max-width: none;  
+  margin: 0 auto;
+  }
+}
+
